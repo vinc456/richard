@@ -195,10 +195,19 @@ Run the server like this::
 
     $ ./manage.py runserver --traceback
 
-
 Then point your browser at ``http://localhost:8000/``.
 
 
+.. note::
+   
+   Depending on how and where you're running runserver, you might need to specify
+   the ip address and port to bind to. You can provide those as an argument to
+   the runserver command. For example::
+
+       $ ./manage.py runserver 0.0.0.0:8000
+
+   will have runserver listen on all ip addresses at port 8000. This might be an   concern if the Django test server is running on a remote VM or machine because it will appear as if the port is closed and the webserver inaccessible.
+   
 Install the pre-commit hooks (optional)
 =======================================
 
