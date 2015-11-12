@@ -193,7 +193,7 @@ Run the server
 
 Run the server like this::
 
-    $ ./manage.py runserver --traceback
+    $ ./manage.py runserver 0.0.0.0:8000 --traceback # 0.0.0.0 allows access to the local Django dev server from other machines on the network.
 
 
 Then point your browser at ``http://localhost:8000/``.
