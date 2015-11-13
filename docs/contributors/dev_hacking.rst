@@ -206,7 +206,7 @@ Then point your browser at ``http://localhost:8000/``.
 
        $ ./manage.py runserver 0.0.0.0:8000
 
-   will have runserver listen on all ip addresses at port 8000. This might be an   concern if the Django test server is running on a remote VM or machine because it will appear as if the port is closed and the webserver inaccessible.
+   will have runserver listen on all ip addresses at port 8000. This might be a concern if the Django test server is running on a remote VM or machine because it will appear as if the port is closed and the webserver inaccessible.
    
 Install the pre-commit hooks (optional)
 =======================================
